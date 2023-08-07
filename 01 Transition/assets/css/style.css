@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* p1.html */
+section {
+    background-color: teal;
+    padding: 20px;
+    margin: 20px;
+}
+.transition:hover {
+    background-color: grey;
+    color: white;
+}
+
+.transition {
+    transition: 2000ms;
+    transition: 2s;
+    transition: color 2s;
+    transition: background-color calc(1s + 1s);
+}
+/* p2.html */
+.bigClip {
+    border: 2px dotted black;
+    border-radius: 10px;
+    text-align: justify;
+    
+    transition: 2s;
+    background-clip: content-box;
+    /* background-clip: padding-box;
+    background-clip: border-box; */
+}
+
+.bigClip:hover {
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* p3.html */
+.common {
+    width: 400px;
+    height: 100px;
+    margin: 20px;
+    background-color: crimson;
+    color: white;
+    transition: width 2s;
+}
+.common:hover {
+    width: 100px;
+    background-color: yellow;
+}
+#d1 {
+    transition-timing-function: linear; /*cubic-beizer(0,0,1,1)*/
+}
+#d2 {
+    transition-timing-function: ease-in; /*cubic-beizer(0.42,0,1,1)*/
+}
+#d3 {
+    transition-timing-function: ease-out; /*cubic-beizer(0,0,0.58,1)*/
+}
+#d4 {
+    transition-timing-function: ease; /*cubic-beizer(0.25,0.1,0.25,1)*/
+}
+#d5 {
+    transition-timing-function: ease-in-out; /*cubic-beizer(0.42,0,0.58,1)*/
+}
+#d6 {
+    transition-timing-function: steps(6,jump-both); /*jump start,jump-end,jump-both,jump-none*/
+}
+#d7 {
+    transition-timing-function: cubic-bezier(0.5,0.7,0.8,0.1); 
+}

@@ -1,0 +1,49 @@
+/* 
+Mobile screen width : 0 to 768px
+Tablet screen width : 768 to 1200px
+Desktop screen width : 1200+px
+*/
+/* Mobile version */
+
+@media(max-width:768px){
+    header{
+        background-color: teal;
+    }
+    header>nav>ul{
+        float: none;
+    }
+    header>nav>ul>li{
+        display: block;
+    }
+    header>nav {
+        text-align: center;
+    }
+    .banner1{
+        background-color: skyblue;
+    }
+    .banner2 {
+        background-image: url(../images/mobile.jpeg);
+    }
+}
+/* Tablet Version */
+
+@media(min-width:768px) and (max-width:1200px) {
+    header {
+        background-color: skyblue;
+        padding: 20px;
+    }
+    header>nav {
+        text-align: center;
+    }
+    header>nav>ul {
+        float:none;
+    }
+    .banner1{
+        background-color: gray;
+    }
+    .banner2 {
+        background-image: url(../images/logo.png);
+    }
+}
+
+
