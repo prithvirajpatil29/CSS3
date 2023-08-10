@@ -1,0 +1,95 @@
+/* p1.html */
+.commonAnimation{
+    padding: 20px;
+    border-radius: 5px;
+    margin: 30px;
+    height: 300px;
+    
+}
+.commonAnimation>h1 {
+    text-align: center;
+    /* color: white;  */
+    font-size: 40px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.animation1{
+    background: black;
+    /* animation: prithviraj;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+    animation: prithviraj 10s infinite;
+}
+
+@keyframes prithviraj {
+    from{
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}
+
+/* p2.html */
+.animation2 {
+    background: url(../images/imag1.jpeg) no-repeat center;
+    background-size:100%;
+    animation: animation-image 10s infinite;
+}
+
+@keyframes animation-image {
+    from{
+        background: url(../images/imag1.jpeg) no-repeat center top;
+        color: red;
+    }
+    to{
+        background: url(../images/imag2.jpeg) no-repeat bottom center;
+        color: blue;
+    }
+    
+}
+
+/* p3.html */
+
+.animation3 {
+    background-color: #fc466B;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    animation: cssAnimation 10s infinite;
+}
+
+@keyframes cssAnimation {
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: #fc466B;
+        color: black;
+    }
+    25% {
+        top: 0px;
+        left: 400px;
+        background-color: aqua;
+        color: black;
+    }
+    50% {
+        top: 400px;
+        left: 400px;
+        background-color: greenyellow;
+        color: gold;
+    }
+    75% {
+        top: 400px;
+        left: 0;
+        background-color: brown;
+        color: greenyellow;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        background-color: #fc466B;
+        color: white;
+    }
+}
