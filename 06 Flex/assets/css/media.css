@@ -1,0 +1,17 @@
+/* p2.html */
+/* Mobile version */
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+    .container>.item{
+        width: 100%;
+    }
+}
+
+/* Tablet Version */
+@media(min-width:768px) and (max-width:1200px){
+    .container>.item{
+        width: 43%;
+    }
+}
