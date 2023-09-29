@@ -322,3 +322,78 @@ header>nav>ul>li:hover>a{
 .img-position>div>.fa-hand-pointer:hover{
     background-color: #f8bf0d;
 }
+
+footer{
+    background-color: #f8bf0d;
+}
+footer form>div>input,footer form>textarea{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding-bottom:20px;
+    margin:0px 10px 20px 0px;
+    outline: none;
+    transition: border-bottom 1s;
+}
+footer form>div>input:focus,footer form>textarea:focus{
+     border-bottom: 2px solid #dc3748;
+}
+footer form>textarea,footer form>button{
+    width: 100%;
+}
+footer form>button{
+    background-color: #dc3748;
+    padding: 20px;
+    border: none;
+    color: #ffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 50px;
+}
+footer form>button:hover{
+    background-color: #fff;
+    color: rgba(244,192,12);
+}
+footer form>div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+footer form>div>input{
+    flex: 1;
+}
+.footer card{
+    background-color: #fff;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px rgba(49,35,35,0.16),0 3px 6px rgba(0,0,0,0.23);
+    line-height: 2;
+    padding: 30px;
+}
+.footer-card>p{
+    color: grey;
+    font-size: 20px;
+}
+.footer-card>p[class*="fa-"]{
+    color: rgba(244,192,12);
+}
+.footer-card>iframe{
+    border-radius: 10px;
+    width: 100%;
+    height: 226px;
+}
+.footer-icon{
+    text-align: center;
+    color: #fff;
+}
+.footer-icon>b>[class*="fa-"]{
+    background-color: #dc3748;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    transition: 1s;
+}
+.footer-icon>b>[class*="fa-"]:hover{
+    transform: rotate(360deg);
+}
